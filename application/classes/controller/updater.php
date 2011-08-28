@@ -8,6 +8,14 @@ class Controller_Updater extends Controller_Farmable {
 
 	public function action_index()
 	{
-		$this->response->body(json_encode($this->request->post()));
+		// Grab the data posted to us and affect in some way..
+		$arr_data = $this->request->post();
+
+		// Just update the data to show that we really have been here!!
+		foreach ($arr_data[$this->_data_key] as $key => &$value) {
+			$value = "affected: {$value}";
+		}
+
+		$this->response->body(json_encode($arr_data));
 	}
 }

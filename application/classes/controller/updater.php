@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Updater extends Controller_Workable {
+class Controller_Updater extends Controller_Farmable {
 
 	protected $_workable_limit = 2;
 	protected $_worker_count = 3;

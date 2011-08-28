@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-abstract class Controller_Workable extends Controller {
+abstract class Controller_Farmable extends Controller {
 
 	/**
 	 * number of items $_POST[$this->get_key()] should be distributed for
